@@ -1,0 +1,11 @@
+using System;
+using Cirrious.CrossCore.Plugins;
+
+namespace $myProject$.Touch.Bootstrap
+{
+	public class FlurryPluginBootstrap
+		: MvxLoaderPluginBootstrapAction<Mnix.Plugins.Flurry.PluginLoader, Mnix.Plugins.Flurry.Touch.Plugin>
+	{
+	}
+}
+

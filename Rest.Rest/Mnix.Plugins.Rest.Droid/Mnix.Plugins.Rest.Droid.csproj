@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
@@ -55,17 +57,14 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net">
-      <Private>True</Private>
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
-      <Private>True</Private>
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Serialization">
-      <Private>True</Private>
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.14\lib\MonoAndroid\System.Xml.Serialization.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -80,15 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mnix.Plugins.Rest\Mnix.Plugins.Rest.csproj">
-      <Project>{fcfcfb61-8f83-463b-9afb-0f92d1a5cc0c}</Project>
+      <Project>{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}</Project>
       <Name>Mnix.Plugins.Rest</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStack\src\ServiceStack.Common.Android\ServiceStack.Common.Android.csproj">
-      <Project>{bea92e9f-00b1-4923-bd81-7f3a9ca24408}</Project>
+    <ProjectReference Include="..\..\ServiceStack\src\ServiceStack.Common.Android\ServiceStack.Common.Android.csproj">
+      <Project>{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}</Project>
       <Name>ServiceStack.Common.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServiceStack\src\ServiceStack.Interfaces\ServiceStack.Interfaces.PCL.csproj">
-      <Project>{a9a1ca9e-f399-490f-aaa3-dc668daab3c0}</Project>
+    <ProjectReference Include="..\..\ServiceStack\src\ServiceStack.Interfaces\ServiceStack.Interfaces.PCL.csproj">
+      <Project>{A9A1CA9E-F399-490F-AAA3-DC668DAAB3C0}</Project>
       <Name>ServiceStack.Interfaces.PCL</Name>
     </ProjectReference>
   </ItemGroup>
