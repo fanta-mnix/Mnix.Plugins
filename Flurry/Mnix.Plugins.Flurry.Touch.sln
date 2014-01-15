@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry", "Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj", "{92975BC2-C6FB-486E-914C-87084E2C06DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry.Touch", "Mnix.Plugins.Flurry.Touch\Mnix.Plugins.Flurry.Touch.csproj", "{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Release|iPhone.Build.0 = Release|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{92975BC2-C6FB-486E-914C-87084E2C06DC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Release|iPhone.Build.0 = Release|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Release|iPhone.Build.0 = Release|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj
+	EndGlobalSection
+EndGlobal
