@@ -75,8 +75,16 @@
     <Compile Include="RestPlugin.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="RestPluginBootstrap.cs">
+      <DependentUpon>RestPluginBootstrap.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
     <None Include="app.config" />
-    <None Include="RestPluginBootstrap.cs" />
+    <None Include="RestPluginBootstrap.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RestPluginBootstrap.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -98,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Values\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
