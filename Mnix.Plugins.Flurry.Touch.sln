@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry", "Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj", "{92975BC2-C6FB-486E-914C-87084E2C06DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry", "Flurry\Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj", "{92975BC2-C6FB-486E-914C-87084E2C06DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry.Touch", "Mnix.Plugins.Flurry.Touch\Mnix.Plugins.Flurry.Touch.csproj", "{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Flurry.Touch", "Flurry\Mnix.Plugins.Flurry.Touch\Mnix.Plugins.Flurry.Touch.csproj", "{C73883B4-05C1-4B4C-B3BA-50F3D4BC6A0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +53,6 @@ Global
 		{FCFCFB61-8F83-463B-9AFB-0F92D1A5CC0C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj
+		StartupItem = Flurry\Mnix.Plugins.Flurry\Mnix.Plugins.Flurry.csproj
 	EndGlobalSection
 EndGlobal
