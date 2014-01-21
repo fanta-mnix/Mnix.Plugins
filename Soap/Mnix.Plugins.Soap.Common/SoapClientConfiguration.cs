@@ -5,7 +5,7 @@ using System.Text;
 using System.Web.Services.Protocols;
 using Cirrious.CrossCore.Plugins;
 
-namespace Mnix.Plugins.Soap.Droid
+namespace Mnix.Plugins.Soap.Common
 {
     public class SoapClientConfiguration : IMvxPluginConfiguration
     {
