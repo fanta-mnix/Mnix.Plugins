@@ -5,7 +5,7 @@ using System.Text;
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
 
-namespace Mnix.Plugins.Soap.Droid
+namespace Mnix.Plugins.Soap.Common
 {
     public class Plugin : IMvxConfigurablePlugin
     {
