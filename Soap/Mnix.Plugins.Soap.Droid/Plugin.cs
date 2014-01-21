@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using Cirrious.CrossCore;
 using Cirrious.CrossCore.Plugins;
-using Mnix.Plugins.Soap.Droid.Svc;
 
 namespace Mnix.Plugins.Soap.Droid
 {

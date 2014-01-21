@@ -6,7 +6,6 @@ using System.Reflection;
 using System.Text;
 using System.Web.Services.Protocols;
 using Cirrious.CrossCore;
-using Mnix.Plugins.Soap.Droid.Svc;
 
 namespace Mnix.Plugins.Soap.Droid
 {
