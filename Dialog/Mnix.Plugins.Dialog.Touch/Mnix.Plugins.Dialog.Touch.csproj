@@ -68,8 +68,5 @@
   <ItemGroup>
     <Compile Include="Plugin.cs" />
     <Compile Include="MvxDialogTask.cs" />
-    <Compile Include="DialogPluginBootstrap.cs">
-      <DependentUpon>DialogPluginBootstrap.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>
