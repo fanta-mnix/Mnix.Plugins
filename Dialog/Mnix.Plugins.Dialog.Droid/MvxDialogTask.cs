@@ -28,5 +28,10 @@ namespace Mnix.Plugins.Dialog.Droid
                 .SetNegativeButton(negativeText, (s, e) => { (noCallback ?? mEmpty)(); })
                 .Create().Show();
         }
+
+        public void Show(string message)
+        {
+            Toast.MakeText(Mvx.Resolve<IMvxAndroidCurrentTopActivity>().Activity, message, ToastLength.Long).Show();
+        }
     }
 }
