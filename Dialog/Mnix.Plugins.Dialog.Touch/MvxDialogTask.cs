@@ -33,6 +33,28 @@ namespace Mnix.Plugins.Dialog.Touch
 
 			dialog.Show();
 		}
+		
+		public void Show(string message)
+		{
+			string title;
+			
+			if(message.Length <= 20)
+			{
+				title = message;
+				message = string.Empty;
+			}
+			else
+			{
+				title = string.Empty;
+			}
+		
+			new UIAlertView(
+				title,
+				message,
+				null,
+				"Ok"
+			).Show();
+		}
 
 		#endregion
 	}
