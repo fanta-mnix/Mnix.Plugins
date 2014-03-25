@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Validation", "Validation\Mnix.Plugins.Validation\Mnix.Plugins.Validation.csproj", "{A9170D02-2239-483D-AA08-5E59775185A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mnix.Plugins.Validation.Touch", "Validation\Mnix.Plugins.Validation.Touch\Mnix.Plugins.Validation.Touch.csproj", "{C36DB705-B3B2-456E-8121-BC98418AAC0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9170D02-2239-483D-AA08-5E59775185A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9170D02-2239-483D-AA08-5E59775185A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9170D02-2239-483D-AA08-5E59775185A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9170D02-2239-483D-AA08-5E59775185A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36DB705-B3B2-456E-8121-BC98418AAC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36DB705-B3B2-456E-8121-BC98418AAC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36DB705-B3B2-456E-8121-BC98418AAC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36DB705-B3B2-456E-8121-BC98418AAC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Validation\Mnix.Plugins.Validation\Mnix.Plugins.Validation.csproj
+	EndGlobalSection
+EndGlobal
