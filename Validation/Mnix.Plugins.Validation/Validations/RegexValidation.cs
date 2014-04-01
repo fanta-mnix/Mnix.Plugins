@@ -43,9 +43,6 @@ namespace Mnix.Plugins.Validation.Rules
         {
             return isValid((string)value);
         }
-        
-		public string TextNamespace { get; set; }
-		public string TextResourceFile { get; set; }
     }
 }
 

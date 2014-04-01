@@ -29,9 +29,6 @@ namespace Mnix.Plugins.Validation.Rules
 				return string.Empty;
 			}
 		}
-        
-		public string TextNamespace { get; set; }
-		public string TextResourceFile { get; set; }
 		
 		#endregion
 	}

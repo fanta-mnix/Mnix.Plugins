@@ -9,8 +9,6 @@ namespace Mnix.Plugins.Validation.Rules
     {
         string ErrorMessage { get; }
         bool isValid(object value);
-		string TextNamespace { get; set; }
-		string TextResourceFile { get; set; }
     }
 
     public interface IValidationRule<T> : IValidationRule

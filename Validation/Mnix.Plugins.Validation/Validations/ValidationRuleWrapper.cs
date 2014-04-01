@@ -34,8 +34,5 @@ namespace Mnix.Plugins.Validation.Rules
         {
             return isValid((T)value);
         }
-        
-		public string TextNamespace { get; set; }
-		public string TextResourceFile { get; set; }
     }
 }
