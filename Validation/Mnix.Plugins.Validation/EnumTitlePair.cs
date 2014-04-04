@@ -37,6 +37,8 @@ namespace Mnix.Plugins.Validation
     {
 		//TODO: tirar istro daquew
 		public string TextNamespace { get; private set; }
+		
+		public event Action<EnumTitlePair<TEnum>, object> ValueChanged;
     
 		public static IEnumerable<EnumTitlePair<TEnum>> GetAll(string textNamespace)
         {
@@ -103,6 +105,11 @@ namespace Mnix.Plugins.Validation
 					Array options = Enum.GetValues(typeof(TEnum));
 					mValueIndex = Array.IndexOf(options, value, 0, options.Length);
 				}
+				
+				if(ValueChanged != null)
+				{
+					ValueChanged(this, value);
+				}
 			}
 		}
         
@@ -125,6 +132,11 @@ namespace Mnix.Plugins.Validation
 				{
 					mValue = null;
 					Title = null;
+				
+					if(ValueChanged != null)
+					{
+						ValueChanged(this, null);
+					}
 				}
 			}
 		}
