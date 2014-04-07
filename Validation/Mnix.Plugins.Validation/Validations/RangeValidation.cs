@@ -13,11 +13,11 @@ namespace Mnix.Plugins.Validation.Rules
             get { return mErrorMessage; }
         }
 
-        public RangeValidation(int minValue, int maxValue, string errorMessage = null)
+        public RangeValidation(int minValue, int maxValue, string errorMessageKey = null)
         {
             MinValue = minValue;
             MaxValue = maxValue;
-            mErrorMessage = string.Format(this.GetErrorText(errorMessage), MinValue, MaxValue);
+            mErrorMessage = string.Format(this.GetErrorText(errorMessageKey), MinValue, MaxValue);
         }
 
         public bool isValid(string value)
