@@ -93,6 +93,11 @@ namespace Mnix.Plugins.Validation
 			}
 			protected set
 			{
+				if(value != null && value is string)
+				{
+					value = Enum.Parse(typeof(TEnum), (string)value, false);
+				}
+			
 				mValue = value;
 			
 				if(value == null)
