@@ -7,11 +7,13 @@ using ServiceStack.ServiceInterface.ServiceModel;
 
 namespace ServiceStack.Validation
 {
+#pragma warning disable
     /// <summary>
     /// The exception which is thrown when a validation error occurred.
     /// This validation is serialized in a extra clean and human-readable way by ServiceStack.
     /// </summary>
     public class ValidationError : ArgumentException, IResponseStatusConvertible
+#pragma warning restore
     {
         private readonly string errorCode;
         public string ErrorMessage { get; private set; }

@@ -560,9 +560,10 @@ namespace ServiceStack.Text.Json
 
             var tokenStartPos = i;
             var valueChar = value[i];
+#pragma warning disable
             var withinQuotes = false;
             var endsToEat = 1;
-
+#pragma warning restore
             switch (valueChar)
             {
                 //If we are at the end, return.

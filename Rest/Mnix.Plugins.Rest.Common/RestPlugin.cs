@@ -5,11 +5,7 @@ using System.Text;
 using Cirrious.CrossCore.Plugins;
 using Cirrious.CrossCore;
 
-#if ANDROID
-namespace Mnix.Plugins.Rest.Droid
-#else
 namespace Mnix.Plugins.Rest.Common
-#endif
 {
     public class RestPlugin : IMvxConfigurablePlugin
     {

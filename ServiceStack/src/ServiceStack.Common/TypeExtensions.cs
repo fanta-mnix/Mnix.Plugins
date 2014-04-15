@@ -15,7 +15,9 @@ namespace ServiceStack.Common
                 List<string> propertyNames;
                 if (!TypePropertyNamesMap.TryGetValue(type, out propertyNames))
                 {
+#pragma warning disable
                     propertyNames = Extensions.EnumerableExtensions.ConvertAll(type.Properties(), x => x.Name);
+#pragma warning restore
                     TypePropertyNamesMap[type] = propertyNames;
                 }
                 return propertyNames;

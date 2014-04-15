@@ -260,7 +260,7 @@ namespace ServiceStack.ServiceClient.Web
                 }
                 return response;
             }
-            catch (WebServiceException webEx)
+            catch (WebServiceException)
             {
                 throw;
             }

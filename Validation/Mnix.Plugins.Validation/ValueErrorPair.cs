@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using Cirrious.MvvmCross.ViewModels;
 using Mnix.Plugins.Validation.Rules;
 
 namespace Mnix.Plugins.Validation
 {
-    public class ValueErrorPair : MvxNotifyPropertyChanged
+    public class ValueErrorPair : INotifyPropertyChanged
     {
         private IValidationRule[] mValidationRules;
 
@@ -19,7 +18,7 @@ namespace Mnix.Plugins.Validation
             set
             {
                 mValue = value;
-                RaisePropertyChanged(() => Value);
+                OnPropertyChanged("Value");
             }
         }
 
@@ -27,8 +26,10 @@ namespace Mnix.Plugins.Validation
         public string ErrorMessage
         {
             get { return mErrorMessage; }
-            set { mErrorMessage = value; RaisePropertyChanged(() => ErrorMessage); }
+            set { mErrorMessage = value; OnPropertyChanged("ErrorMessage"); ; }
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public ValueErrorPair(params IValidationRule[] validationRules)
         {
@@ -57,6 +58,19 @@ namespace Mnix.Plugins.Validation
             // Passed all validations
             ErrorMessage = null;
         }
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (string.IsNullOrEmpty(propertyName))
+            {
+                throw new ArgumentException("'propertyName' (" + propertyName + ") must be a valid identifier");
+            }
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+        
     }
 
     public class ValueErrorPair<TProperty> : ValueErrorPair

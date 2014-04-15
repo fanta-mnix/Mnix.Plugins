@@ -20,7 +20,9 @@ namespace ServiceStack.Common
 
         public static List<To> SafeConvertAll<To, From>(this IEnumerable<From> items, Func<From, To> converter)
         {
+#pragma warning disable
             return items == null ? new List<To>() : Extensions.EnumerableExtensions.ConvertAll(items, converter);
+#pragma warning restore
         }
 
         public static List<object> ToObjects<T>(this IEnumerable<T> items)
