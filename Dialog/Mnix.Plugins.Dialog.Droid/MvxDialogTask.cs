@@ -26,6 +26,7 @@ namespace Mnix.Plugins.Dialog.Droid
                 .SetMessage(message)
                 .SetPositiveButton(positiveText, (s, e) => { (yesCallback ?? mEmpty)(); })
                 .SetNegativeButton(negativeText, (s, e) => { (noCallback ?? mEmpty)(); })
+                .SetCancelable(false)
                 .Create().Show();
         }
 
